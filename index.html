@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>iOS App Archive</title>
+    <meta
+      name="description"
+      content="A GitHub Pages + GitHub Codespaces-ready archive of classic iOS applications."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div>
+          <p class="eyebrow">Classic app catalog</p>
+          <h1>iOS App Archive</h1>
+        </div>
+        <nav aria-label="Main navigation" class="top-nav">
+          <a href="#overview">Home</a>
+          <a href="#apps">Apps</a>
+          <a href="#archive-format">Archive Format</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="overview">
+      <section class="hero">
+        <div class="container hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">GitHub Pages + Codespaces</p>
+            <h2>Browse archived IPA files, app details, bundle IDs, versions, and minimum iOS requirements.</h2>
+            <p>
+              This archive is designed to be lightweight, easy to browse, and ready for publishing from a
+              GitHub repository using GitHub Pages.
+            </p>
+          </div>
+          <div class="hero-card">
+            <h3>Archive snapshot</h3>
+            <ul>
+              <li>19 catalog entries</li>
+              <li>Bundle ID tracking</li>
+              <li>Minimum OS metadata</li>
+              <li>Ready for static hosting</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="apps" class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">App Information</p>
+            <h2>Classic iOS applications</h2>
+          </div>
+
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>App Name</th>
+                  <th>Bundle ID</th>
+                  <th>Version</th>
+                  <th>Platform</th>
+                  <th>Minimum OS</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Animal Sounds</td><td>com.smartbabyapps.animalsounds</td><td>2.0</td><td>iOS</td><td>3.1</td></tr>
+                <tr><td>SoundTouch</td><td>com.yourcompany.SoundTouch</td><td>1.4</td><td>iOS</td><td>3.0</td></tr>
+                <tr><td>Tozzle</td><td>com.nodeflexion.Tozzle</td><td>3.7</td><td>iOS</td><td>3.1.3</td></tr>
+                <tr><td>AutismXpress</td><td>X7WS995LSR.com.StudioEmotion.AutismXpress</td><td>1.0</td><td>iOS</td><td>3.1.2</td></tr>
+                <tr><td>Lunchbox</td><td>com.thup.MonkeyPreschool</td><td>1.4</td><td>iOS</td><td>3.0</td></tr>
+                <tr><td>Peek-a-Zoo</td><td>com.duckduckmoosedesign.peekazoo</td><td>1.1.1</td><td>iOS</td><td>3.0</td></tr>
+                <tr><td>Michigan Nature Sounds</td><td>com.yourcompany.MichiganNatureSounds</td><td>1.0</td><td>iOS</td><td>3.0</td></tr>
+                <tr><td>Peek-a-Zoo</td><td>com.tbd.pazCLL</td><td>1.0</td><td>iOS</td><td>3.0</td></tr>
+                <tr><td>Artsee</td><td>com.britejar.artsee</td><td>1.1</td><td>iOS</td><td>2.2</td></tr>
+                <tr><td>Angry Birds</td><td>com.rovio.AngryBirdsHalloween</td><td>1.5.3</td><td>iOS</td><td>3.0</td></tr>
+                <tr><td>Farm Flip Fun</td><td>lv.yapp.farmflipfun</td><td>1.0</td><td>iOS</td><td>3.0</td></tr>
+                <tr><td>Farm Story</td><td>com.teamlava.farmstory</td><td>1.2</td><td>iOS</td><td>3.0</td></tr>
+                <tr><td>Stickers</td><td>com.nightanddaystudios.ericcarlestickers</td><td>1.0</td><td>iOS</td><td>5.0</td></tr>
+                <tr><td>Forest</td><td>com.nightanddaystudios.peekabooforest</td><td>1.1.0</td><td>iOS</td><td>3.1.3</td></tr>
+                <tr><td>Virtuoso</td><td>com.peterb.virtuosopianofree</td><td>3.1.2</td><td>iOS</td><td>4.0</td></tr>
+                <tr><td>ABC Tracer</td><td>com.appzoo.ABCTracer</td><td>1.8</td><td>iOS</td><td>2.2.1</td></tr>
+                <tr><td>Peek Wild</td><td>com.nightanddaystudios.peekaboowild</td><td>2.0.1</td><td>iOS</td><td>3.1.3</td></tr>
+                <tr><td>Peekaboo</td><td>com.nightanddaystudios.peekaboobarn</td><td>2.0</td><td>iOS</td><td>2.2</td></tr>
+                <tr><td>Finding Sight</td><td>my.finding3</td><td>2.1</td><td>iOS</td><td>3.2</td></tr>
+                <tr><td>ArtikPix</td><td>com.rinnapps.artikpix.iap</td><td>1.2.4</td><td>iOS</td><td>3.1</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="archive-format" class="section alt-section">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">IPA Archive Format</p>
+            <h2>Application package structure</h2>
+          </div>
+
+          <pre class="archive-tree">Application.ipa
+├── Payload/
+│   └── Application.app/
+│       ├── Info.plist
+│       ├── Application Binary
+│       ├── Icon.png
+│       ├── Resources/
+│       ├── Images/
+│       ├── Sounds/
+│       └── Data Files
+└── iTunesArtwork</pre>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">App Information</p>
+            <h2>Detailed records</h2>
+          </div>
+
+          <div class="app-grid">
+            <article class="app-card">
+              <h3>Animal Sounds</h3>
+              <ul>
+                <li><strong>Bundle ID:</strong> com.smartbabyapps.animalsounds</li>
+                <li><strong>Version:</strong> 2.0</li>
+                <li><strong>Platform:</strong> iOS</li>
+                <li><strong>Minimum OS:</strong> 3.1</li>
+              </ul>
+            </article>
+
+            <article class="app-card">
+              <h3>SoundTouch</h3>
+              <ul>
+                <li><strong>Bundle ID:</strong> com.yourcompany.SoundTouch</li>
+                <li><strong>Version:</strong> 1.4</li>
+                <li><strong>Platform:</strong> iOS</li>
+                <li><strong>Minimum OS:</strong> 3.0</li>
+              </ul>
+            </article>
+
+            <article class="app-card">
+              <h3>Tozzle</h3>
+              <ul>
+                <li><strong>Bundle ID:</strong> com.nodeflexion.Tozzle</li>
+                <li><strong>Version:</strong> 3.7</li>
+                <li><strong>Platform:</strong> iOS</li>
+                <li><strong>Minimum OS:</strong> 3.1.3</li>
+              </ul>
+            </article>
+
+            <article class="app-card">
+              <h3>AutismXpress</h3>
+              <ul>
+                <li><strong>Bundle ID:</strong> X7WS995LSR.com.StudioEmotion.AutismXpress</li>
+                <li><strong>Version:</strong> 1.0</li>
+                <li><strong>Platform:</strong> iOS</li>
+                <li><strong>Minimum OS:</strong> 3.1.2</li>
+              </ul>
+            </article>
+
+            <article class="app-card">
+              <h3>Lunchbox</h3>
+              <ul>
+                <li><strong>Bundle ID:</strong> com.thup.MonkeyPreschool</li>
+                <li><strong>Version:</strong> 1.4</li>
+                <li><strong>Platform:</strong> iOS</li>
+                <li><strong>Minimum OS:</strong> 3.0</li>
+              </ul>
+            </article>
+
+            <article class="app-card">
+              <h3>Peek-a-Zoo</h3>
+              <ul>
+                <li><strong>Bundle ID:</strong> com.duckduckmoosedesign.peekazoo</li>
+                <li><strong>Version:</strong> 1.1.1</li>
+                <li><strong>Platform:</strong> iOS</li>
+                <li><strong>Minimum OS:</strong> 3.0</li>
+              </ul>
+            </article>
+
+            <article class="app-card">
+              <h3>Michigan Nature Sounds</h3>
+              <ul>
+                <li><strong>Bundle ID:</strong> com.yourcompany.MichiganNatureSounds</li>
+                <li><strong>Version:</strong> 1.0</li>
+                <li><strong>Platform:</strong> iOS</li>
+                <li><strong>Minimum OS:</strong> 3.0</li>
+              </ul>
+            </article>
+
+            <article class="app-card">
+              <h3>Artsee</h3>
+              <ul>
+                <li><strong>Bundle ID:</strong> com.britejar.artsee</li>
+                <li><strong>Version:</strong> 1.1</li>
+                <li><strong>Platform:</strong> iOS</li>
+                <li><strong>Minimum OS:</strong> 2.2</li>
+              </ul>
+            </article>
+
+            <article class="app-card">
+              <h3>Angry Birds</h3>
+              <ul>
+                <li><strong>Bundle ID:</strong> com.rovio.AngryBirdsHalloween</li>
+                <li><strong>Version:</strong> 1.5.3</li>
+                <li><strong>Platform:</strong> iOS</li>
+                <li><strong>Minimum OS:</strong> 3.0</li>
+              </ul>
+            </article>
+
+            <article class="app-card">
+              <h3>Farm Flip Fun</h3>
+              <ul>
+                <li><strong>Bundle ID:</strong> lv.yapp.farmflipfun</li>
+                <li><strong>Version:</strong> 1.0</li>
+                <li><strong>Platform:</strong> iOS</li>
+                <li><strong>Minimum OS:</strong> 3.0</li>
+              </ul>
+            </article>
+
+            <article class="app-card">
+              <h3>Farm Story</h3>
+              <ul>
+                <li><strong>Bundle ID:</strong> com.teamlava.farmstory</li>
+                <li><strong>Version:</strong> 1.2</li>
+                <li><strong>Platform:</strong> iOS</li>
+                <li><strong>Minimum OS:</strong> 3.0</li>
+              </ul>
+            </article>
+
+            <article class="app-card">
+              <h3>Stickers</h3>
+              <ul>
+                <li><strong>Bundle ID:</strong> com.nightanddaystudios.ericcarlestickers</li>
+                <li><strong>Version:</strong> 1.0</li>
+                <li><strong>Platform:</strong> iOS</li>
+                <li><strong>Minimum OS:</strong> 5.0</li>
+              </ul>
+            </article>
+
+            <article class="app-card">
+              <h3>Forest</h3>
+              <ul>
+                <li><strong>Bundle ID:</strong> com.nightanddaystudios.peekabooforest</li>
+                <li><strong>Version:</strong> 1.1.0</li>
+                <li><strong>Platform:</strong> iOS</li>
+                <li><strong>Minimum OS:</strong> 3.1.3</li>
+              </ul>
+            </article>
+
+            <article class="app-card">
+              <h3>Virtuoso</h3>
+              <ul>
+                <li><strong>Bundle ID:</strong> com.peterb.virtuosopianofree</li>
+                <li><strong>Version:</strong> 3.1.2</li>
+                <li><strong>Platform:</strong> iOS</li>
+                <li><strong>Minimum OS:</strong> 4.0</li>
+              </ul>
+            </article>
+
+            <article class="app-card">
+              <h3>ABC Tracer</h3>
+              <ul>
+                <li><strong>Bundle ID:</strong> com.appzoo.ABCTracer</li>
+                <li><strong>Version:</strong> 1.8</li>
+                <li><strong>Platform:</strong> iOS</li>
+                <li><strong>Minimum OS:</strong> 2.2.1</li>
+              </ul>
+            </article>
+
+            <article class="app-card">
+              <h3>Peek Wild</h3>
+              <ul>
+                <li><strong>Bundle ID:</strong> com.nightanddaystudios.peekaboowild</li>
+                <li><strong>Version:</strong> 2.0.1</li>
+                <li><strong>Platform:</strong> iOS</li>
+                <li><strong>Minimum OS:</strong> 3.1.3</li>
+              </ul>
+            </article>
+
+            <article class="app-card">
+              <h3>Peekaboo</h3>
+              <ul>
+                <li><strong>Bundle ID:</strong> com.nightanddaystudios.peekaboobarn</li>
+                <li><strong>Version:</strong> 2.0</li>
+                <li><strong>Platform:</strong> iOS</li>
+                <li><strong>Minimum OS:</strong> 2.2</li>
+              </ul>
+            </article>
+
+            <article class="app-card">
+              <h3>Finding Sight</h3>
+              <ul>
+                <li><strong>Bundle ID:</strong> my.finding3</li>
+                <li><strong>Version:</strong> 2.1</li>
+                <li><strong>Platform:</strong> iOS</li>
+                <li><strong>Minimum OS:</strong> 3.2</li>
+              </ul>
+            </article>
+
+            <article class="app-card">
+              <h3>ArtikPix</h3>
+              <ul>
+                <li><strong>Bundle ID:</strong> com.rinnapps.artikpix.iap</li>
+                <li><strong>Version:</strong> 1.2.4</li>
+                <li><strong>Platform:</strong> iOS</li>
+                <li><strong>Minimum OS:</strong> 3.1</li>
+              </ul>
+            </article>
+
+            <article class="app-card">
+              <h3>Peek-a-Zoo</h3>
+              <ul>
+                <li><strong>Bundle ID:</strong> com.tbd.pazCLL</li>
+                <li><strong>Version:</strong> 1.0</li>
+                <li><strong>Platform:</strong> iOS</li>
+                <li><strong>Minimum OS:</strong> 3.0</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>iOS App Archive — classic app metadata for archival browsing.</p>
+      </div>
+    </footer>
+  </body>
+</html>
