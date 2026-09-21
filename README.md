@@ -38,6 +38,22 @@ versions, and minimum iOS requirements.
 
 ## IPA Archive Format
 
+Application.ipa
+│
+├── Payload/
+│ │
+│ └── Application.app/
+│ │
+│ ├── Info.plist
+│ ├── Application Binary
+│ ├── Icon.png
+│ ├── Resources/
+│ ├── Images/
+│ ├── Sounds/
+│ └── Data Files
+│
+└── iTunesArtwork
+
 ---
 
 # App Information
