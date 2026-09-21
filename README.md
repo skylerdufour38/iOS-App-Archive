@@ -199,3 +199,23 @@ This project provides a searchable home screen containing app information, versi
 ---
 
 # Project Structure
+
+iOS-App-Archive/
+│
+├── README.md
+├── index.html
+├── style.css
+├── app.js
+│
+├── apps/
+│ └── apps.json
+│
+├── ipa/
+│ ├── AnimalSounds.ipa
+│ ├── SoundTouch_1.4.ipa
+│ ├── Tozzle_3.7.ipa
+│ └── ...
+│
+└── assets/
+├── icons/
+└── screenshots/
