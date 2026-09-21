@@ -1,0 +1,23 @@
+{
+  "name": "iOS App Archive",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "forwardPorts": [8000],
+  "portsAttributes": {
+    "8000": {
+      "label": "Static site preview",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "postCreateCommand": "python3 -m http.server 8000 --directory /workspaces/iOS-App-Archive &",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "livePreview.defaultPreviewPath": "/index.html"
+      },
+      "extensions": [
+        "ms-vscode.live-server",
+        "GitHub.vscode-pull-request-github"
+      ]
+    }
+  }
+}
